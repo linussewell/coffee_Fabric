@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "coffee",
+	"version": "${version}",
+	"name": "Coffee+",
+	"description": "Coffee+ adds coffee to Minecraft, the way coffee should be done.",
+	"authors": [
+		"Linus Sewell aka hyphengg"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/coffeeplus",
+		"sources": "https://github.com/linussewell/coffee"
+	},
+	"license": "MIT",
+	"icon": "assets/coffee/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.linussewell.coffee.Coffee"
+		],
+		"client": [
+			"com.linussewell.coffee.CoffeeClient"
+		],
+		"fabric-datagen": [
+			"com.linussewell.coffee.CoffeeDataGenerator"
+		]
+	},
+	"mixins": [
+		"coffee.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
